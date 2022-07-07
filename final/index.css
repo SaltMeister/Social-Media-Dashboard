@@ -1,0 +1,228 @@
+body
+{
+    background-color: #E0FFFF;
+    font-family: 'Mingzat', sans-serif;
+}
+img
+{
+    max-width: 50px;
+    max-height: 50px;
+}
+#headerDiv
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: azure;
+    width: 100%;
+    justify-content: left;
+    position: relative;
+} 
+.contentGrid
+{
+    margin-top: 20px;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}  
+.headerButton
+{
+    grid-row: 1;
+    grid-column: 2;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+.header
+{
+    grid-row: 1;
+    grid-column: 1;
+}
+button
+{
+    border-radius: 3px;
+    font-size: 25px;
+    padding: 10px;
+}
+button:hover
+{
+    box-shadow: black 0px 0px 15px;
+    background-color: gainsboro;
+}
+button:active
+{
+    background-color: grey;
+}
+/*  Code taken from w3schools  */
+.switch
+{
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    border: solid 2px grey;
+}
+/* Hide default HTML checkbox */
+.switch input 
+{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider 
+{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before
+{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    left: 4px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .2s;
+}
+
+input:checked + .slider 
+{
+    background-color: darkblue;
+}
+
+input:focus + .slider 
+{
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before 
+{
+    -webkit-transform: translateX(70px);
+    -ms-transform: translateX(70px);
+    transform: translateX(70px);
+}
+/* End of code taken from w3schools  */
+.sliderText
+{
+    font-size: 25px;
+    position: absolute;
+    top: -28px;
+    z-index: 1;
+}
+#lightText
+{
+    left: 60px;
+}
+#darkText
+{
+    display: none;
+    color: white;
+}
+.box
+{
+    border-radius: 5px;
+    background-color: lightgoldenrodyellow;
+    max-width: 300px;
+    min-width: 175px;
+    border: 1px solid black;
+    border-top: 5px solid royalblue;
+}
+.followers
+{
+    text-shadow: 2px 2px 3px lightcoral;
+    margin: 0px;
+}
+.center
+{
+    margin-top: 5px;
+    text-align: center;
+}
+.title
+{
+    grid-column: 1/ span 2;
+}
+.value
+{
+    grid-column: 2;
+    grid-row: 2;
+}
+.icon
+{
+    position: relative;
+    top: 40px;
+    margin: 0px;
+    grid-column: 3;
+}
+.summary
+{
+    position: relative;
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 300px;
+    justify-content: space-evenly;
+    border: 3px solid rosybrown;
+    box-shadow: royalblue 0px 0px 2px;
+    margin: 0px;
+    padding: 0px;
+} 
+h3
+{
+    margin-left: 10px;
+    font-size: 30px;
+}
+.green 
+{
+    color: green;
+    font-size: 20px;
+    text-shadow: darkgreen 0px 0px 1px;
+}
+.red 
+{
+    color: red;
+    font-size: 20px;
+    text-shadow: darkred 0px 0px 1px;
+}
+.summaryGrid
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    justify-content: space-evenly;
+
+}    
+.change
+{
+    grid-column: 3;
+}
+@media only screen and (min-width: 1024px)
+{
+    #container
+    {
+        justify-content: space-evenly;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 1024px)
+{
+    .box
+    {
+        max-width: 300px;
+        min-width: 100px;
+
+    }
+    .summary
+    {
+        width: 250px;
+    }
+}

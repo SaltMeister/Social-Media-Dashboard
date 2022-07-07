@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mingzat&display=swap" rel="stylesheet">
+    <title>Final Web</title>
+</head>
+<body id="body">
+    <div id="container">
+        <div id="headerDiv">
+            <div class="header">
+                <h1>Social Media Dashboard</h1>
+                <p>Follower Count: 4,320</p>
+            </div>
+            <div class="headerButton">
+                <!-- <button onclick="changeBackground()">Change Background</button> -->
+                <label class="switch">
+                    <input type="checkbox" onclick="changeBackground()" placeholder="Light  Dark">
+                    <span class="slider"></span>
+                    <p class="sliderText" id="lightText">Light</p>
+                    <p class="sliderText" id="darkText">Dark</p>
+                  </label>
+            </div>
+        </div>
+        <!-- End of header section -->
+
+        <div class="contentGrid">
+            <div class="item1 box">
+                <h3>Facebook</h3>
+                <h1 class="followers center">356</h1>
+                <p class="center">FOLLOWERS</p>
+            </div>
+            <div class="item2 box">
+                <h3>Instagram</h3>
+                <h1 class="followers center">630</h1>
+                <p class="center">FOLLOWERS</p>
+            </div>
+            <div class="item3 box">
+                <h3>Twitter</h3>
+                <h1 class="followers center">20</h1>
+                <p class="center">FOLLOWERS</p>
+            </div>
+        </div>  
+        <!-- End of content div -->
+        <div id="summaryHeader">
+            <h1>Overview - Today</h3>
+        </div>
+
+        <div class="summaryGrid">
+            <div class="sumItem1 box summary">
+                <h3 class="title">Views</h3>
+                <h1 class="value center">356</h1>
+                <p class="icon"><img src="asset/fbIcon.png"></p> <!-- add icons -->
+                <p class="green change">16%</p>
+            </div>
+            <div class="sumItem2 box summary">
+                <h3 class="title">Views</h3>
+                <h1 class="value center">234</h1>
+                <p class="icon"><img src="asset/instIcon.png"></p> <!-- add icons -->
+                <p class="green change">6%</p>
+            </div>
+            <div class="sumItem3 box summary">
+                <h3 class="title">Likes</h3>
+                <h1 class="value center">630</h1>
+                <p class="icon"><img src="asset/fbIcon.png"></p> <!-- add icons -->
+                <p class="green change">2%</p>
+            </div>
+            <div class="sumItem4 box summary">
+                <h3 class="title">Likes</h3>
+                <h1 class="value center">20</h1>
+                <p class="icon"><img src="asset/instIcon.png"></p> <!-- add icons -->
+                <p class="red change">10%</p>
+            </div>
+        </div> 
+        <!-- End of summary div  -->
+    </div>
+    <!-- End of container div -->
+</body>
+</html>
