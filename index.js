@@ -14,7 +14,7 @@ function changeBackground()
 
         document.body.style.backgroundColor = "#E0FFFF";
         document.body.style.color = 'black';
-        document.getElementById("headerDiv").style.backgroundColor = "azure";
+        //document.getElementById("headerDiv").style.backgroundColor = "azure";
        
         // Hide / Show light dark text.
         light.style.display = 'block';
@@ -34,7 +34,7 @@ function changeBackground()
 
         document.body.style.backgroundColor = "#666699";
         document.body.style.color = 'gainsboro';
-        document.getElementById("headerDiv").style.backgroundColor = "#52527a";
+        //document.getElementById("headerDiv").style.backgroundColor = "#52527a";
 
         // Hide / Show light dark text.
         light.style.display = 'none';
